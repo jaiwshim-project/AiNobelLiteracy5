@@ -5159,98 +5159,7 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- Results Screen (분석 결과 화면) -->
-    <!-- ============================================ -->
-    <div id="results-screen" class="hidden flex-1 min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
-
-        <!-- Top Bar -->
-        <div class="bg-white border-b shadow-sm">
-            <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                <div class="flex items-center space-x-6">
-                    <h1 class="text-xl cursor-pointer transition-colors rqtdw-logo" onclick="backToLanding()" title="언어 선택으로 돌아가기">
-                        <span class="text-blue-600">R</span><span class="text-orange-600">Q</span><span class="text-green-600">T</span><span class="text-purple-600">D</span><span class="text-teal-600">W</span><span class="text-gray-900">©</span><sup class="text-gray-600 text-[0.6rem] sm:text-[0.7rem] font-semibold tracking-tight ml-0.5">HUMAN QUESTIONING & THINKING OS</sup>
-                    </h1>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <span class="text-2xl">📊</span>
-                    <span class="text-lg font-bold text-gray-900">Analysis Results</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="max-w-7xl mx-auto px-6 py-8">
-
-            <!-- 헤더 -->
-            <div class="mb-8 text-center">
-                <h2 class="text-3xl font-bold text-gray-900 mb-2" data-i18n="results.header">
-                    🎉 Thinking Analysis Results
-                </h2>
-                <p class="text-gray-600" data-i18n="results.subtitle">
-                    Final analysis results after completing all inputs
-                </p>
-            </div>
-
-            <!-- Grade Change Summary (메인 분석 결과) -->
-            <div class="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border-2 border-blue-200 mb-8">
-                <!-- Grade Change Visualization -->
-                <div class="bg-white rounded-lg p-4">
-                    <h4 class="text-sm font-bold text-gray-800 mb-3 flex items-center">
-                        <span class="mr-2">📊</span>
-                        Grade Change Summary
-                    </h4>
-                    <div class="flex items-center justify-center space-x-4 mb-4">
-                        <div class="text-center">
-                            <div class="text-3xl mb-1" id="results-summary-initial-icon">📚</div>
-                            <div class="text-xs text-gray-600" id="results-summary-initial-grade">Grade C</div>
-                            <div class="text-lg font-bold text-yellow-600" id="results-summary-initial-score">5.8</div>
-                        </div>
-                        <div class="flex-1 flex items-center justify-center">
-                            <div class="flex items-center space-x-1">
-                                <div class="text-2xl text-green-600">→</div>
-                                <div class="text-sm font-semibold text-green-700" id="results-summary-growth-points">+2.4 points</div>
-                                <div class="text-2xl text-green-600">→</div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl mb-1" id="results-summary-final-icon">💎</div>
-                            <div class="text-xs text-gray-600" id="results-summary-final-grade">Grade A</div>
-                            <div class="text-lg font-bold text-blue-600" id="results-summary-final-score">8.2</div>
-                        </div>
-                    </div>
-
-                    <!-- Key Changes (5개 카테고리) -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 text-xs">
-                        <div class="flex items-start p-2 bg-green-50 rounded">
-                            <span class="text-green-600 mr-1 flex-shrink-0">✓</span>
-                            <span class="text-gray-700"><strong><span data-i18n="criteria.depth">질문 깊이</span>:</strong> <span id="results-summary-depth-change">2.0 → 4.8 (+2.8)</span></span>
-                        </div>
-                        <div class="flex items-start p-2 bg-blue-50 rounded">
-                            <span class="text-blue-600 mr-1 flex-shrink-0">✓</span>
-                            <span class="text-gray-700"><strong><span data-i18n="criteria.perspective">관점 다양성</span>:</strong> <span id="results-summary-perspective-change">2.0 → 3.6 (+1.6)</span></span>
-                        </div>
-                        <div class="flex items-start p-2 bg-purple-50 rounded">
-                            <span class="text-purple-600 mr-1 flex-shrink-0">✓</span>
-                            <span class="text-gray-700"><strong><span data-i18n="criteria.structure">구조화 능력</span>:</strong> <span id="results-summary-structure-change">2.0 → 2.0 (0.0)</span></span>
-                        </div>
-                        <div class="flex items-start p-2 bg-orange-50 rounded">
-                            <span class="text-orange-600 mr-1 flex-shrink-0">✓</span>
-                            <span class="text-gray-700"><strong><span data-i18n="criteria.discussion">토론 능력</span>:</strong> <span id="results-summary-discussion-change">2.0 → 3.2 (+1.2)</span></span>
-                        </div>
-                        <div class="flex items-start p-2 bg-pink-50 rounded">
-                            <span class="text-pink-600 mr-1 flex-shrink-0">✓</span>
-                            <span class="text-gray-700"><strong><span data-i18n="criteria.application">실행 가능성</span>:</strong> <span id="results-summary-application-change">2.0 → 2.4 (+0.4)</span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 성장 분석 리포트는 독립된 페이지로 이동되었습니다 -->
-
-        </div>
-    </div>
-
-    <!-- Results Analysis Report Screen (독립 페이지) -->
+    <!-- Results Analysis Report Screen (분석 결과 화면) -->
     <div id="results-screen" class="hidden flex-1 min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
 
         <!-- Top Bar -->
@@ -5274,9 +5183,9 @@
                     <div>
                         <h4 class="font-semibold text-gray-900 mb-1 flex items-center">
                             <span class="text-2xl mr-2">📈</span>
-                            Thinking Level Report
+                            <span data-i18n="results.thinkingLevelReport">사고 레벨 리포트</span>
                         </h4>
-                        <p class="text-sm text-gray-600">Thinking growth metrics measured in this training</p>
+                        <p class="text-sm text-gray-600" data-i18n="results.thinkingLevelSubtitle">이번 훈련에서 측정된 사고 성장 지표</p>
                     </div>
                 </div>
 
@@ -5393,41 +5302,41 @@
                 <!-- Score Cards -->
                 <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-4">
                     <div class="bg-white p-4 rounded-lg">
-                        <div class="text-xs text-gray-600 mb-1">Question Depth</div>
+                        <div class="text-xs text-gray-600 mb-1" data-i18n="criteria.depth">질문 깊이</div>
                         <div class="text-2xl font-bold text-blue-600" id="results-depth-score">8.5/10</div>
-                        <div class="text-xs text-gray-500 mt-1">Essence exploration</div>
+                        <div class="text-xs text-gray-500 mt-1" data-i18n="results.depthDesc">본질 탐구</div>
                         <div class="mt-2 bg-gray-200 rounded-full h-2">
                             <div class="bg-blue-600 h-2 rounded-full transition-all duration-1000" id="results-depth-bar" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded-lg">
-                        <div class="text-xs text-gray-600 mb-1">Perspective Diversity</div>
+                        <div class="text-xs text-gray-600 mb-1" data-i18n="criteria.perspective">관점 다양성</div>
                         <div class="text-2xl font-bold text-green-600" id="results-perspective-score">8.2/10</div>
-                        <div class="text-xs text-gray-500 mt-1">Multi-faceted view</div>
+                        <div class="text-xs text-gray-500 mt-1" data-i18n="results.perspectiveDesc">다면적 시각</div>
                         <div class="mt-2 bg-gray-200 rounded-full h-2">
                             <div class="bg-green-600 h-2 rounded-full transition-all duration-1000" id="results-perspective-bar" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded-lg">
-                        <div class="text-xs text-gray-600 mb-1">Structuring Ability</div>
+                        <div class="text-xs text-gray-600 mb-1" data-i18n="criteria.structure">구조화 능력</div>
                         <div class="text-2xl font-bold text-purple-600" id="results-structure-score">8.0/10</div>
-                        <div class="text-xs text-gray-500 mt-1">Framework</div>
+                        <div class="text-xs text-gray-500 mt-1" data-i18n="results.structureDesc">프레임워크</div>
                         <div class="mt-2 bg-gray-200 rounded-full h-2">
                             <div class="bg-purple-600 h-2 rounded-full transition-all duration-1000" id="results-structure-bar" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded-lg">
-                        <div class="text-xs text-gray-600 mb-1">Discussion Expansion</div>
+                        <div class="text-xs text-gray-600 mb-1" data-i18n="results.discussionTitle">토론 확장력</div>
                         <div class="text-2xl font-bold text-indigo-600" id="results-discussion-score">7.8/10</div>
-                        <div class="text-xs text-gray-500 mt-1">Collective intelligence</div>
+                        <div class="text-xs text-gray-500 mt-1" data-i18n="results.discussionDesc">집단지성</div>
                         <div class="mt-2 bg-gray-200 rounded-full h-2">
                             <div class="bg-indigo-600 h-2 rounded-full transition-all duration-1000" id="results-discussion-bar" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded-lg">
-                        <div class="text-xs text-gray-600 mb-1">Execution/Transition</div>
+                        <div class="text-xs text-gray-600 mb-1" data-i18n="results.applicationTitle">실행·전환</div>
                         <div class="text-2xl font-bold text-orange-600" id="results-application-score">7.5/10</div>
-                        <div class="text-xs text-gray-500 mt-1">Action conversion</div>
+                        <div class="text-xs text-gray-500 mt-1" data-i18n="results.applicationDesc">행동 전환</div>
                         <div class="mt-2 bg-gray-200 rounded-full h-2">
                             <div class="bg-orange-600 h-2 rounded-full transition-all duration-1000" id="results-application-bar" style="width: 0%"></div>
                         </div>
@@ -5439,28 +5348,10 @@
                     <div class="flex items-start">
                         <div class="text-2xl mr-3">🎯</div>
                         <div>
-                            <h5 class="font-semibold text-gray-900 mb-2">AI Overall Evaluation</h5>
+                            <h5 class="font-semibold text-gray-900 mb-2" data-i18n="results.aiEvaluation">AI 종합 평가</h5>
                             <p class="text-sm text-gray-700 mb-3" id="results-ai-feedback">
-                                <strong>Growth Point:</strong> Excellent ability to reframe questions.
-                                Try using more diverse frameworks next time.
                             </p>
-                            <div class="grid grid-cols-2 gap-2 text-xs">
-                                <div class="flex items-center text-green-700">
-                                    <span class="mr-1">✓</span>
-                                    <span>Excellent question depth</span>
-                                </div>
-                                <div class="flex items-center text-green-700">
-                                    <span class="mr-1">✓</span>
-                                    <span>Diverse perspectives acquired</span>
-                                </div>
-                                <div class="flex items-center text-blue-700">
-                                    <span class="mr-1">→</span>
-                                    <span>Need framework diversification</span>
-                                </div>
-                                <div class="flex items-center text-blue-700">
-                                    <span class="mr-1">→</span>
-                                    <span>Recommend more discussion participation</span>
-                                </div>
+                            <div class="grid grid-cols-2 gap-2 text-xs" id="results-ai-feedback-items">
                             </div>
                         </div>
                     </div>
@@ -5470,9 +5361,270 @@
                 <div class="bg-white rounded-lg p-4">
                     <h5 class="font-semibold text-gray-900 mb-3 flex items-center">
                         <span class="text-xl mr-2">📊</span>
-                        Recent 5 Sessions Growth Trend
+                        <span data-i18n="results.growthTrend">최근 5회차 성장 추이</span>
                     </h5>
                     <canvas id="resultsGrowthTrendChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+
+            <!-- 강점/약점 분석 -->
+            <div class="p-6 bg-white rounded-xl shadow-md border-2 border-gray-200 mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">⚖️</span>
+                    <span data-i18n="results.strengthWeakness">강점 & 약점 분석</span>
+                </h4>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <!-- 강점 -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-5">
+                        <div class="flex items-center mb-3">
+                            <span class="text-2xl mr-2">🎯</span>
+                            <h5 class="font-bold text-green-800" data-i18n="results.strengths">당신의 강점</h5>
+                        </div>
+                        <div class="space-y-2 text-sm" id="results-strengths-list">
+                            <div class="flex items-start text-green-700">
+                                <span class="mr-2 mt-0.5">✓</span>
+                                <span>질문 깊이: 평균 대비 +2.3 높음</span>
+                            </div>
+                            <div class="flex items-start text-green-700">
+                                <span class="mr-2 mt-0.5">✓</span>
+                                <span>토론 능력: 빠른 성장 (+1.2)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 약점 -->
+                    <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-lg p-5">
+                        <div class="flex items-center mb-3">
+                            <span class="text-2xl mr-2">⚠️</span>
+                            <h5 class="font-bold text-orange-800" data-i18n="results.weaknesses">개선이 필요한 영역</h5>
+                        </div>
+                        <div class="space-y-2 text-sm" id="results-weaknesses-list">
+                            <div class="flex items-start text-orange-700">
+                                <span class="mr-2 mt-0.5">•</span>
+                                <span>구조화 능력: 성장 없음 (0.0)</span>
+                            </div>
+                            <div class="flex items-start text-orange-700">
+                                <span class="mr-2 mt-0.5">•</span>
+                                <span>실행 가능성: 낮은 성장 (+0.4)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 개인화된 피드백 (사고 패턴 분석) -->
+            <div class="p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl shadow-md border-2 border-purple-200 mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">📝</span>
+                    <span data-i18n="results.thinkingPattern">당신의 사고 패턴 분석</span>
+                </h4>
+                <div class="bg-white rounded-lg p-5">
+                    <div class="space-y-3 text-sm text-gray-700" id="results-thinking-pattern">
+                        <p class="flex items-start">
+                            <span class="text-purple-600 mr-2 mt-0.5">→</span>
+                            <span>추상적 사고는 뛰어나지만, 구체적 실행 계획이 부족합니다</span>
+                        </p>
+                        <p class="flex items-start">
+                            <span class="text-purple-600 mr-2 mt-0.5">→</span>
+                            <span>다양한 관점을 고려하는 능력이 향상되었습니다</span>
+                        </p>
+                        <p class="flex items-start">
+                            <span class="text-purple-600 mr-2 mt-0.5">→</span>
+                            <span>논리적 근거를 제시하는 능력이 개선되었습니다</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 다음 단계 추천 -->
+            <div class="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl shadow-md border-2 border-blue-200 mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">🎓</span>
+                    <span data-i18n="results.nextSteps">성장을 위한 다음 단계</span>
+                </h4>
+                <div class="space-y-4" id="results-next-steps">
+                    <div class="bg-white rounded-lg p-4">
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">1️⃣</span>
+                            <div class="flex-1">
+                                <h5 class="font-bold text-blue-900 mb-1">구조화 능력 강화</h5>
+                                <p class="text-sm text-gray-600 mb-2">MECE, 로직 트리 등의 프레임워크를 학습하세요</p>
+                                <div class="flex gap-2">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">MECE</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Logic Tree</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Mind Map</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-4">
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">2️⃣</span>
+                            <div class="flex-1">
+                                <h5 class="font-bold text-blue-900 mb-1">실행 계획 수립 연습</h5>
+                                <p class="text-sm text-gray-600 mb-2">"어떻게" 질문에 집중하여 구체적인 실행 방안을 수립하세요</p>
+                                <div class="flex gap-2">
+                                    <span class="px-2 py-1 bg-cyan-100 text-cyan-700 rounded text-xs">Action Plan</span>
+                                    <span class="px-2 py-1 bg-cyan-100 text-cyan-700 rounded text-xs">5W1H</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 질문 품질 분석 -->
+            <div class="p-6 bg-white rounded-xl shadow-md border-2 border-gray-200 mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">📊</span>
+                    <span data-i18n="results.questionQuality">당신이 한 질문 분석</span>
+                </h4>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- 질문 유형 분포 -->
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h5 class="font-semibold text-gray-800 mb-3" data-i18n="results.questionTypesUsed">사용한 질문 유형</h5>
+                        <div class="space-y-2" id="results-question-types">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-700">논리 질문</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 40%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-gray-700">40%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-700">개념 질문</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-600 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-gray-700">30%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-700">관점 질문</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-32 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 20%"></div>
+                                    </div>
+                                    <span class="text-sm font-semibold text-gray-700">20%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 가장 효과적인 질문 -->
+                    <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg p-4">
+                        <h5 class="font-semibold text-gray-800 mb-3"><span>✨</span> <span data-i18n="results.mostEffectiveQuestion">가장 효과적이었던 질문</span></h5>
+                        <div class="bg-white rounded p-3 mb-3">
+                            <p class="text-sm text-gray-700 italic" id="results-best-question">"이 결정의 논리적 근거는 무엇인가?"</p>
+                        </div>
+                        <p class="text-xs text-gray-600" id="results-best-question-reason">
+                            💡 핵심을 파고드는 논리 질문으로 사고의 깊이를 높였습니다
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 학습 여정 타임라인 -->
+            <div class="p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl shadow-md border-2 border-indigo-200 mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">📈</span>
+                    <span data-i18n="results.learningJourney">당신의 성장 여정</span>
+                </h4>
+
+                <div class="relative">
+                    <!-- Timeline -->
+                    <div class="flex items-center justify-between relative">
+                        <!-- Progress Line -->
+                        <div class="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-300 via-purple-300 to-green-300 transform -translate-y-1/2"></div>
+
+                        <!-- Steps -->
+                        <div class="relative z-10 flex-1 text-center" id="results-journey-read">
+                            <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-500 text-white rounded-full font-bold mb-2">
+                                📖
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700" data-i18n="stage.read">Read</p>
+                            <p class="text-xs text-blue-600 font-bold" data-i18n="results.startLabel">시작</p>
+                        </div>
+
+                        <div class="relative z-10 flex-1 text-center" id="results-journey-question">
+                            <div class="inline-flex items-center justify-center w-12 h-12 bg-orange-500 text-white rounded-full font-bold mb-2">
+                                ❓
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700" data-i18n="stage.question">Question</p>
+                            <p class="text-xs text-orange-600 font-bold">+0.8</p>
+                        </div>
+
+                        <div class="relative z-10 flex-1 text-center" id="results-journey-think">
+                            <div class="inline-flex items-center justify-center w-12 h-12 bg-green-500 text-white rounded-full font-bold mb-2">
+                                💡
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700" data-i18n="stage.think">Think</p>
+                            <p class="text-xs text-green-600 font-bold">+1.2</p>
+                        </div>
+
+                        <div class="relative z-10 flex-1 text-center" id="results-journey-discuss">
+                            <div class="inline-flex items-center justify-center w-12 h-12 bg-purple-500 text-white rounded-full font-bold mb-2">
+                                💬
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700" data-i18n="stage.discussion">Discuss</p>
+                            <p class="text-xs text-purple-600 font-bold">+0.4</p>
+                        </div>
+
+                        <div class="relative z-10 flex-1 text-center" id="results-journey-write">
+                            <div class="inline-flex items-center justify-center w-12 h-12 bg-teal-500 text-white rounded-full font-bold mb-2">
+                                ✍️
+                            </div>
+                            <p class="text-xs font-semibold text-gray-700" data-i18n="stage.write">Write</p>
+                            <p class="text-xs text-teal-600 font-bold">Complete</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-600 text-center mt-4">
+                    <span class="font-semibold text-indigo-700"><span data-i18n="results.totalGrowth">총 성장</span>: <span id="results-journey-total">+2.4점</span></span>
+                </p>
+            </div>
+
+            <!-- 비교 분석 -->
+            <div class="p-6 bg-white rounded-xl shadow-md border-2 border-gray-200 mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">📊</span>
+                    <span data-i18n="results.comparison">평균과의 비교</span>
+                </h4>
+
+                <div class="grid md:grid-cols-3 gap-4">
+                    <!-- 당신의 점수 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg p-5 text-center border-2 border-blue-300">
+                        <p class="text-sm text-gray-600 mb-2" data-i18n="results.yourScore">당신의 점수</p>
+                        <p class="text-4xl font-bold text-blue-600 mb-1" id="results-comparison-your-score">8.2</p>
+                        <p class="text-xs text-blue-700 font-semibold">🏆 Excellent</p>
+                    </div>
+
+                    <!-- 평균 점수 -->
+                    <div class="bg-gray-100 rounded-lg p-5 text-center">
+                        <p class="text-sm text-gray-600 mb-2" data-i18n="results.averageScore">평균 점수</p>
+                        <p class="text-4xl font-bold text-gray-600 mb-1" id="results-comparison-average-score">6.5</p>
+                        <p class="text-xs text-gray-600 font-semibold">Average</p>
+                    </div>
+
+                    <!-- 상위 퍼센트 -->
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-lg p-5 text-center border-2 border-green-300">
+                        <p class="text-sm text-gray-600 mb-2" data-i18n="results.yourRank">당신의 순위</p>
+                        <p class="text-4xl font-bold text-green-600 mb-1" id="results-comparison-percentile">상위 25%</p>
+                        <p class="text-xs text-green-700 font-semibold">⭐ Top Performer</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                    <p class="text-sm text-yellow-800">
+                        <span class="font-semibold">💡 <span data-i18n="results.insight">인사이트</span>:</span>
+                        <span id="results-comparison-insight">평균보다 1.7점 높으며, 특히 질문 깊이와 관점 다양성에서 뛰어난 성과를 보였습니다.</span>
+                    </p>
                 </div>
             </div>
 
@@ -5800,9 +5952,35 @@
                 'results.title': '성장 분석 리포트',
                 'results.header': '🎉 사고력 분석 결과',
                 'results.subtitle': '입력 완료 후 최종 분석 결과입니다',
+                'results.thinkingLevelReport': '사고 레벨 리포트',
+                'results.thinkingLevelSubtitle': '이번 훈련에서 측정된 사고 성장 지표',
                 'results.initial': '초기 질문',
                 'results.final': '최종 결과',
                 'results.growth': '성장도',
+                'results.depthDesc': '본질 탐구',
+                'results.perspectiveDesc': '다면적 시각',
+                'results.structureDesc': '프레임워크',
+                'results.discussionTitle': '토론 확장력',
+                'results.discussionDesc': '집단지성',
+                'results.applicationTitle': '실행·전환',
+                'results.applicationDesc': '행동 전환',
+                'results.aiEvaluation': 'AI 종합 평가',
+                'results.growthTrend': '최근 5회차 성장 추이',
+                'results.strengthWeakness': '강점 & 약점 분석',
+                'results.strengths': '당신의 강점',
+                'results.weaknesses': '개선이 필요한 영역',
+                'results.nextSteps': '성장을 위한 다음 단계',
+                'results.questionQuality': '당신이 한 질문 분석',
+                'results.questionTypesUsed': '사용한 질문 유형',
+                'results.mostEffectiveQuestion': '가장 효과적이었던 질문',
+                'results.learningJourney': '당신의 성장 여정',
+                'results.totalGrowth': '총 성장',
+                'results.startLabel': '시작',
+                'results.comparison': '평균과의 비교',
+                'results.yourScore': '당신의 점수',
+                'results.averageScore': '평균 점수',
+                'results.yourRank': '당신의 순위',
+                'results.insight': '인사이트',
 
                 // 버튼
                 'button.home': '홈으로',
@@ -6254,9 +6432,35 @@
                 'results.title': 'Growth Analysis Report',
                 'results.header': '🎉 Thinking Analysis Results',
                 'results.subtitle': 'Final analysis results after completing all inputs',
+                'results.thinkingLevelReport': 'Thinking Level Report',
+                'results.thinkingLevelSubtitle': 'Thinking growth metrics measured in this training',
                 'results.initial': 'Initial Question',
                 'results.final': 'Final Result',
                 'results.growth': 'Growth',
+                'results.depthDesc': 'Essence exploration',
+                'results.perspectiveDesc': 'Multi-faceted view',
+                'results.structureDesc': 'Framework',
+                'results.discussionTitle': 'Discussion Expansion',
+                'results.discussionDesc': 'Collective intelligence',
+                'results.applicationTitle': 'Execution/Transition',
+                'results.applicationDesc': 'Action conversion',
+                'results.aiEvaluation': 'AI Overall Evaluation',
+                'results.growthTrend': 'Recent 5 Sessions Growth Trend',
+                'results.strengthWeakness': 'Strengths & Weaknesses Analysis',
+                'results.strengths': 'Your Strengths',
+                'results.weaknesses': 'Areas for Improvement',
+                'results.nextSteps': 'Next Steps for Growth',
+                'results.questionQuality': 'Your Question Analysis',
+                'results.questionTypesUsed': 'Question Types Used',
+                'results.mostEffectiveQuestion': 'Most Effective Question',
+                'results.learningJourney': 'Your Learning Journey',
+                'results.totalGrowth': 'Total Growth',
+                'results.startLabel': 'Start',
+                'results.comparison': 'Comparison with Average',
+                'results.yourScore': 'Your Score',
+                'results.averageScore': 'Average Score',
+                'results.yourRank': 'Your Rank',
+                'results.insight': 'Insight',
 
                 // Buttons
                 'button.home': 'Home',
@@ -7047,7 +7251,7 @@
         // AI 기반 맞춤형 질문 생성 시스템
         // ============================================
         
-        // 질문 키워드 분석
+        // 질문 키워드 분석 (개선된 버전)
         function analyzeQuestion(question) {
             const analysis = {
                 keywords: [],
@@ -7056,12 +7260,18 @@
                 hasGoal: false,
                 hasDilemma: false,
                 hasUncertainty: false,
-                hasComparison: false
+                hasComparison: false,
+                // 새로 추가된 분석 항목
+                questionType: 'general', // planning, problem, decision, explanation, evaluation
+                mainTopic: '',
+                context: '',
+                actionVerbs: []
             };
-            
+
             const q = question.toLowerCase();
-            
-            // 카테고리 분류
+            const original = question;
+
+            // 카테고리 분류 (기존 + 추가)
             if (q.includes('창업') || q.includes('사업') || q.includes('비즈니스')) {
                 analysis.category = 'business';
             } else if (q.includes('커리어') || q.includes('직장') || q.includes('이직') || q.includes('취업')) {
@@ -7072,27 +7282,73 @@
                 analysis.category = 'relationship';
             } else if (q.includes('목표') || q.includes('꿈') || q.includes('하고 싶')) {
                 analysis.category = 'goal';
-            } else if (q.includes('배우') || q.includes('공부') || q.includes('학습')) {
+            } else if (q.includes('배우') || q.includes('공부') || q.includes('학습') || q.includes('수업')) {
                 analysis.category = 'learning';
+            } else if (q.includes('교육') || q.includes('가르') || q.includes('교사') || q.includes('선생')) {
+                analysis.category = 'teaching';
             }
-            
+
             // 의도 파악
             if (q.includes('어떻게') || q.includes('방법')) {
                 analysis.intent = 'how';
             } else if (q.includes('왜') || q.includes('이유')) {
                 analysis.intent = 'why';
-            } else if (q.includes('무엇') || q.includes('뭐')) {
+            } else if (q.includes('무엇') || q.includes('뭐') || q.includes('어떤')) {
                 analysis.intent = 'what';
             } else if (q.includes('언제') || q.includes('시기')) {
                 analysis.intent = 'when';
             }
-            
+
+            // 질문 유형 분류 (새로 추가)
+            if (q.includes('준비') || q.includes('계획') || q.includes('진행하면') || q.includes('설계')) {
+                analysis.questionType = 'planning';
+            } else if (q.includes('문제') || q.includes('해결') || q.includes('고장') || q.includes('오류')) {
+                analysis.questionType = 'problem';
+            } else if (q.includes('결정') || q.includes('선택') || q.includes('고민')) {
+                analysis.questionType = 'decision';
+            } else if (q.includes('설명') || q.includes('이해') || q.includes('의미') || q.includes('개념')) {
+                analysis.questionType = 'explanation';
+            } else if (q.includes('평가') || q.includes('판단') || q.includes('좋은지') || q.includes('나쁜지')) {
+                analysis.questionType = 'evaluation';
+            }
+
+            // 주요 주제 추출 (명사구 찾기)
+            const topicPatterns = [
+                /([가-힣]+)\s*(수업|강의|교육)/,
+                /([가-힣]+)\s*(에|의|을|를)\s*대해/,
+                /([가-힣]+)\s*관련/,
+                /([가-힣0-9]+)\s*(프로젝트|업무|과제)/
+            ];
+
+            for (let pattern of topicPatterns) {
+                const match = original.match(pattern);
+                if (match && match[1]) {
+                    analysis.mainTopic = match[1];
+                    break;
+                }
+            }
+
+            // 맥락 추출 (수업, 업무, 프로젝트 등)
+            if (q.includes('수업') || q.includes('강의')) {
+                analysis.context = '수업';
+            } else if (q.includes('프로젝트') || q.includes('과제')) {
+                analysis.context = '프로젝트';
+            } else if (q.includes('업무') || q.includes('일')) {
+                analysis.context = '업무';
+            } else if (q.includes('시험') || q.includes('평가')) {
+                analysis.context = '평가';
+            }
+
+            // 행동 동사 추출
+            const verbs = ['준비', '진행', '계획', '실행', '개선', '해결', '분석', '설계', '구성'];
+            analysis.actionVerbs = verbs.filter(verb => q.includes(verb));
+
             // 특성 파악
             analysis.hasGoal = q.includes('하고 싶') || q.includes('목표') || q.includes('되고 싶');
             analysis.hasDilemma = q.includes('vs') || q.includes('아니면') || q.includes('고민');
             analysis.hasUncertainty = q.includes('확신') || q.includes('불안') || q.includes('모르겠');
             analysis.hasComparison = q.includes('비교') || q.includes('차이');
-            
+
             return analysis;
         }
 
@@ -7217,13 +7473,186 @@
             return relevanceScores.slice(0, 4);
         }
 
+        // 맥락 기반 맞춤형 질문 생성 (새로운 알고리즘)
+        function generateContextualQuestion(originalQuestion, questionTypeId, analysis, lang) {
+            const q = originalQuestion;
+            const topic = analysis.mainTopic || '이 문제';
+            const context = analysis.context || '상황';
+            const qType = analysis.questionType;
+            const intent = analysis.intent;
+
+            // 한국어 맞춤형 질문 생성
+            if (lang === 'ko') {
+                switch (questionTypeId) {
+                    case 1: // 기억 질문
+                        if (qType === 'planning') {
+                            return `과거에 비슷한 ${context}를 준비할 때 효과적이었던 방법은 무엇인가요?`;
+                        } else if (qType === 'problem') {
+                            return `과거에 비슷한 문제를 어떻게 해결했는지 기억하시나요?`;
+                        } else {
+                            return `"${topic}"과 관련해 과거에 경험한 비슷한 상황은 어떤 것이 있나요?`;
+                        }
+
+                    case 2: // 확인 질문
+                        if (qType === 'planning') {
+                            return `${context} 계획에서 가장 확신하는 부분과 불확실한 부분은 각각 무엇인가요?`;
+                        } else if (qType === 'decision') {
+                            return `이 결정에 대해 확신이 있나요? 확신의 근거는 무엇인가요?`;
+                        } else {
+                            return `"${topic}"에 대한 현재 이해 수준이 충분하다고 확신하나요?`;
+                        }
+
+                    case 3: // 개념 질문
+                        if (analysis.mainTopic) {
+                            return `"${topic}"의 핵심 개념이나 본질은 무엇이라고 생각하나요?`;
+                        } else if (qType === 'planning') {
+                            return `이 계획에서 '성공'을 어떻게 정의하시겠습니까?`;
+                        } else {
+                            return `이 질문에서 가장 중요한 핵심 개념은 무엇인가요?`;
+                        }
+
+                    case 4: // 관찰 질문
+                        if (qType === 'planning' && context === '수업') {
+                            return `${topic}에 대해 학생들이 특히 어려워하거나 흥미로워하는 부분을 관찰한 적 있나요?`;
+                        } else if (qType === 'problem') {
+                            return `이 문제에서 관찰한 주요 패턴이나 특이점은 무엇인가요?`;
+                        } else {
+                            return `"${topic}"와 관련해 최근 눈에 띄는 변화나 현상이 있나요?`;
+                        }
+
+                    case 5: // 느낌 질문
+                        if (qType === 'planning') {
+                            return `${context}를 준비하면서 어떤 감정이나 기대감이 드나요?`;
+                        } else if (qType === 'problem') {
+                            return `이 문제를 마주했을 때 가장 먼저 든 감정은 무엇이었나요?`;
+                        } else {
+                            return `"${topic}"를 생각할 때 가장 강하게 느껴지는 감정은 무엇인가요?`;
+                        }
+
+                    case 6: // 논리 질문
+                        if (qType === 'planning' && analysis.category === 'teaching') {
+                            return `${topic}를 ${context}에서 다루는 교육적 근거는 무엇인가요?`;
+                        } else if (qType === 'planning') {
+                            return `이런 방식으로 준비하려는 논리적 이유나 근거는 무엇인가요?`;
+                        } else if (qType === 'decision') {
+                            return `이 판단을 내린 논리적 근거는 무엇인가요?`;
+                        } else if (intent === 'how' || intent === 'what') {
+                            return `이렇게 접근해야 한다고 생각하는 이유는 무엇인가요?`;
+                        } else if (qType === 'problem') {
+                            return `이 해결 방법이 효과적일 것이라고 판단한 근거는 무엇인가요?`;
+                        } else {
+                            return `"${topic}"에 대한 이런 생각을 갖게 된 논리적 근거는 무엇인가요?`;
+                        }
+
+                    case 7: // 꼬꼬 질문 (Deep-dive)
+                        if (qType === 'planning') {
+                            return `왜 이 ${context}가 중요한가요? 그 근본적인 이유는 무엇인가요?`;
+                        } else if (analysis.mainTopic) {
+                            return `${topic}가 중요한 이유는 무엇이고, 그 이유의 이유는 무엇인가요?`;
+                        } else {
+                            return `이 질문의 근본 원인은 무엇이고, 왜 지금 이것이 중요한가요?`;
+                        }
+
+                    case 8: // 배움 질문
+                        if (qType === 'planning' && context === '수업') {
+                            return `이 ${context}를 통해 학생들이 얻을 가장 중요한 배움이나 통찰은 무엇인가요?`;
+                        } else if (qType === 'problem') {
+                            return `이 문제 해결 과정에서 배울 수 있는 가장 큰 교훈은 무엇일까요?`;
+                        } else {
+                            return `"${topic}"를 통해 어떤 성장이나 배움을 기대하나요?`;
+                        }
+
+                    case 9: // 가정 질문
+                        if (qType === 'planning') {
+                            return `만약 시간과 자원이 무제한이라면, 이 ${context}를 어떻게 설계하시겠습니까?`;
+                        } else if (qType === 'problem') {
+                            return `만약 이 문제가 해결된다면, 무엇이 달라질까요?`;
+                        } else {
+                            return `만약 실패가 없다면 "${topic}"에 대해 무엇을 시도해보고 싶나요?`;
+                        }
+
+                    case 10: // 실천 질문
+                        if (qType === 'planning') {
+                            return `이 계획을 실행하기 위한 구체적인 첫 단계는 무엇인가요?`;
+                        } else if (analysis.actionVerbs.length > 0) {
+                            return `"${analysis.actionVerbs[0]}"를 위해 내일 당장 할 수 있는 첫 번째 행동은?`;
+                        } else {
+                            return `"${topic}"에 대해 지금 당장 시작할 수 있는 구체적인 행동은?`;
+                        }
+
+                    case 11: // 판단 질문
+                        if (qType === 'planning' && context === '수업') {
+                            return `${topic} ${context}에서 가장 중요하게 다뤄야 할 핵심 내용은 무엇이고, 그 판단 기준은?`;
+                        } else if (qType === 'decision') {
+                            return `이 결정에서 가장 중요한 판단 기준은 무엇인가요?`;
+                        } else {
+                            return `"${topic}"에서 최선의 선택을 하기 위한 판단 기준은 무엇인가요?`;
+                        }
+
+                    case 12: // 공감 질문
+                        if (context === '수업' && analysis.category === 'teaching') {
+                            return `학생들은 ${topic}에 대해 어떤 생각과 느낌을 가질까요?`;
+                        } else if (analysis.category === 'relationship') {
+                            return `상대방은 이 상황을 어떻게 이해하고 느끼고 있을까요?`;
+                        } else {
+                            return `"${topic}"와 관련된 다른 사람들의 입장은 어떨까요?`;
+                        }
+
+                    case 13: // 상상 질문
+                        if (qType === 'planning') {
+                            return `전혀 다른 방식으로 접근한다면, 어떻게 ${context}를 구성할 수 있을까요?`;
+                        } else if (analysis.mainTopic) {
+                            return `${topic}에 대한 혁신적이고 창의적인 접근 방법은 무엇이 있을까요?`;
+                        } else {
+                            return `10년 후에는 이 문제가 어떻게 해결되어 있을까요?`;
+                        }
+
+                    case 14: // 관계 질문
+                        if (analysis.mainTopic) {
+                            return `${topic}가 다른 영역이나 주제와 어떻게 연결되어 있나요?`;
+                        } else if (qType === 'planning') {
+                            return `이 ${context}가 다른 활동이나 목표에 미치는 영향은 무엇인가요?`;
+                        } else {
+                            return `이 문제가 해결되면 다른 어떤 것들이 긍정적으로 바뀔까요?`;
+                        }
+
+                    case 15: // 관점 질문
+                        if (context === '수업' && analysis.category === 'teaching') {
+                            return `교육 전문가라면 ${topic} ${context}를 어떻게 설계할까요?`;
+                        } else if (analysis.mainTopic) {
+                            return `${topic} 전문가라면 이 질문을 어떻게 볼까요?`;
+                        } else {
+                            return `5년 후의 당신은 이 고민을 어떻게 평가할까요?`;
+                        }
+                }
+            }
+
+            // 영어 버전 (기본 템플릿 사용)
+            return null;
+        }
+
         // 선택된 창의질문 유형으로 맞춤형 질문 생성
         function generateQuestionFromCreativeType(originalQuestion, creativeQ) {
             const lang = currentLang;
             const cqData = creativeQ[lang];
             const q = originalQuestion;
 
-            // 질문 유형별 맞춤 템플릿 (다국어)
+            // 질문 분석
+            const analysis = analyzeQuestion(originalQuestion);
+
+            // 맥락 기반 맞춤형 질문 생성 시도
+            const contextualQ = generateContextualQuestion(originalQuestion, creativeQ.id, analysis, lang);
+            if (contextualQ && lang === 'ko') {
+                return {
+                    category: cqData.name,
+                    question: contextualQ,
+                    reason: cqData.purpose,
+                    icon: creativeQ.icon,
+                    creativeQuestionId: creativeQ.id
+                };
+            }
+
+            // 기본 템플릿 (fallback for English or when contextual fails)
             const templates = {
                 ko: {
                     1: [ // 기억 질문
@@ -9119,10 +9548,169 @@
             });
         }
         
+        // 토론 참여자 A, B, C의 맞춤형 질문 생성
+        function generateDiscussionQuestions(originalQuestion, lang = 'ko') {
+            const analysis = analyzeQuestion(originalQuestion);
+            const topic = analysis.mainTopic || (lang === 'ko' ? '이 주제' : 'this topic');
+            const context = analysis.context || (lang === 'ko' ? '상황' : 'situation');
+            const qType = analysis.questionType;
+            const category = analysis.category;
+
+            const questions = {
+                participantA: {
+                    question: '',
+                    type: lang === 'ko' ? '질문으로 시작하기' : 'Starting with a question'
+                },
+                participantB: {
+                    question: '',
+                    type: lang === 'ko' ? '질문으로 응답하기' : 'Responding with a question'
+                },
+                participantC: {
+                    question: '',
+                    type: lang === 'ko' ? '관점 전환 질문' : 'Perspective shift question'
+                }
+            };
+
+            if (lang === 'ko') {
+                // 한국어 버전
+                // 참여자 A: 전제나 가정을 의심하는 질문
+                if (qType === 'planning' && category === 'teaching') {
+                    questions.participantA.question = `${topic} ${context}에서 학생들이 정말 알아야 할 핵심은 무엇일까요? 우리가 중요하다고 생각하는 것이 학생들에게도 중요할까요?`;
+                } else if (qType === 'planning') {
+                    questions.participantA.question = `이 계획의 전제가 되는 가정은 무엇인가요? 그 가정이 틀렸다면 어떻게 될까요?`;
+                } else if (qType === 'decision') {
+                    questions.participantA.question = `우리가 '최선'이라고 부르는 것이 정말 최선일까요? 다른 기준에서 보면 어떨까요?`;
+                } else if (qType === 'problem') {
+                    questions.participantA.question = `이것이 정말 해결해야 할 '문제'일까요? 혹시 문제를 다르게 정의할 수는 없을까요?`;
+                } else {
+                    questions.participantA.question = `"${topic}"에 대해 우리가 당연하게 여기는 전제는 무엇인가요? 그것이 정말 맞을까요?`;
+                }
+
+                // 참여자 B: 개념이나 방법을 깊이 파는 질문
+                if (qType === 'planning' && context === '수업') {
+                    questions.participantB.question = `좋은 질문이네요. 그렇다면 '효과적인 ${context}'와 '학생 중심 ${context}'는 어떻게 다를까요? 어느 것을 먼저 추구해야 할까요?`;
+                } else if (qType === 'planning') {
+                    questions.participantB.question = `흥미롭네요. 그렇다면 '좋은 계획'과 '실행 가능한 계획'은 어떻게 다를까요?`;
+                } else if (qType === 'decision') {
+                    questions.participantB.question = `그렇다면 '올바른 결정'과 '현명한 결정'의 차이는 무엇일까요? 둘 중 무엇이 더 중요할까요?`;
+                } else if (qType === 'problem') {
+                    questions.participantB.question = `좋은 지적입니다. 그렇다면 '문제 해결'과 '문제 예방'은 어떻게 다를까요?`;
+                } else if (analysis.mainTopic) {
+                    questions.participantB.question = `흥미로운 질문입니다. 그렇다면 "${topic}"와 관련된 핵심 개념들 사이의 관계는 무엇일까요?`;
+                } else {
+                    questions.participantB.question = `좋은 질문이네요. 이 문제의 본질과 현상을 어떻게 구분할 수 있을까요?`;
+                }
+
+                // 참여자 C: 이해관계자 관점에서 재해석하는 질문
+                if (category === 'teaching' && context === '수업') {
+                    questions.participantC.question = `학생의 관점에서 보면, 이 ${context}에서 정말로 가치 있는 것은 무엇일까요? 우리의 계획이 학생들이 원하는 것과 일치할까요?`;
+                } else if (qType === 'planning' && analysis.mainTopic) {
+                    questions.participantC.question = `이해관계자들의 관점에서 보면, "${topic}"에서 가장 중요한 것은 무엇일까요? 각자의 우선순위가 다르지 않을까요?`;
+                } else if (category === 'business') {
+                    questions.participantC.question = `고객의 관점에서 보면, 우리의 확신보다 더 중요한 것은 무엇일까요? 고객은 정말 우리의 확신을 원할까요?`;
+                } else if (category === 'relationship') {
+                    questions.participantC.question = `상대방의 입장에서 보면, 이 상황은 어떻게 보일까요? 우리가 놓치고 있는 것은 없을까요?`;
+                } else if (qType === 'decision') {
+                    questions.participantC.question = `이 결정으로 영향받는 사람들의 관점에서 보면 어떨까요? 그들은 무엇을 가장 중요하게 여길까요?`;
+                } else {
+                    questions.participantC.question = `다른 관점에서 보면, "${topic}"의 의미가 어떻게 달라질까요? 모두에게 같은 의미일까요?`;
+                }
+            } else {
+                // 영어 버전
+                // 참여자 A: 전제나 가정을 의심하는 질문
+                if (qType === 'planning' && category === 'teaching') {
+                    questions.participantA.question = `In teaching ${topic}, what's truly essential for students to learn? Is what we think is important also important to students?`;
+                } else if (qType === 'planning') {
+                    questions.participantA.question = `What assumptions underlie this plan? What if those assumptions are wrong?`;
+                } else if (qType === 'decision') {
+                    questions.participantA.question = `Is what we call 'the best option' really the best? How might it look from a different perspective?`;
+                } else if (qType === 'problem') {
+                    questions.participantA.question = `Is this really a 'problem' that needs solving? Could we define the problem differently?`;
+                } else {
+                    questions.participantA.question = `What assumptions do we take for granted about "${topic}"? Are they really valid?`;
+                }
+
+                // 참여자 B: 개념이나 방법을 깊이 파는 질문
+                if (qType === 'planning' && (context === '수업' || context === 'class')) {
+                    questions.participantB.question = `Good question. Then how does an 'effective lesson' differ from a 'student-centered lesson'? Which should we pursue first?`;
+                } else if (qType === 'planning') {
+                    questions.participantB.question = `Interesting. Then how does a 'good plan' differ from an 'executable plan'?`;
+                } else if (qType === 'decision') {
+                    questions.participantB.question = `Then what's the difference between a 'right decision' and a 'wise decision'? Which is more important?`;
+                } else if (qType === 'problem') {
+                    questions.participantB.question = `Good point. Then how does 'problem solving' differ from 'problem prevention'?`;
+                } else if (analysis.mainTopic) {
+                    questions.participantB.question = `Interesting question. What's the relationship between the key concepts related to "${topic}"?`;
+                } else {
+                    questions.participantB.question = `Good question. How can we distinguish between the essence and the phenomenon of this issue?`;
+                }
+
+                // 참여자 C: 이해관계자 관점에서 재해석하는 질문
+                if (category === 'teaching' && (context === '수업' || context === 'class')) {
+                    questions.participantC.question = `From students' perspective, what's truly valuable in this lesson? Does our plan align with what students want?`;
+                } else if (qType === 'planning' && analysis.mainTopic) {
+                    questions.participantC.question = `From stakeholders' perspectives, what matters most in "${topic}"? Don't they have different priorities?`;
+                } else if (category === 'business') {
+                    questions.participantC.question = `From the customer's perspective, what matters more than our certainty? Do customers really want our certainty?`;
+                } else if (category === 'relationship') {
+                    questions.participantC.question = `From the other person's perspective, how does this situation look? Are we missing something?`;
+                } else if (qType === 'decision') {
+                    questions.participantC.question = `From the perspective of those affected by this decision, how would they view it? What would they value most?`;
+                } else {
+                    questions.participantC.question = `From a different perspective, how does the meaning of "${topic}" change? Does it mean the same thing to everyone?`;
+                }
+            }
+
+            return questions;
+        }
+
+        // 토론 참여자 메시지 UI 업데이트
+        function updateDiscussionParticipants(questions) {
+            // 참여자 A 업데이트
+            const msgAElement = document.querySelector('[data-i18n="discuss.msgA"]');
+            const typeAElement = document.querySelector('[data-i18n="discuss.msgA.type"]');
+            if (msgAElement) {
+                msgAElement.textContent = questions.participantA.question;
+                msgAElement.removeAttribute('data-i18n');
+            }
+            if (typeAElement) {
+                typeAElement.textContent = questions.participantA.type;
+                typeAElement.removeAttribute('data-i18n');
+            }
+
+            // 참여자 B 업데이트
+            const msgBElement = document.querySelector('[data-i18n="discuss.msgB"]');
+            const typeBElement = document.querySelector('[data-i18n="discuss.msgB.type"]');
+            if (msgBElement) {
+                msgBElement.textContent = questions.participantB.question;
+                msgBElement.removeAttribute('data-i18n');
+            }
+            if (typeBElement) {
+                typeBElement.textContent = questions.participantB.type;
+                typeBElement.removeAttribute('data-i18n');
+            }
+
+            // 참여자 C 업데이트
+            const msgCElement = document.querySelector('[data-i18n="discuss.msgC"]');
+            const typeCElement = document.querySelector('[data-i18n="discuss.msgC.type"]');
+            if (msgCElement) {
+                msgCElement.textContent = questions.participantC.question;
+                msgCElement.removeAttribute('data-i18n');
+            }
+            if (typeCElement) {
+                typeCElement.textContent = questions.participantC.type;
+                typeCElement.removeAttribute('data-i18n');
+            }
+        }
+
         function completeThinking() {
             const question = document.getElementById('think-question').textContent;
             document.getElementById('discussion-topic').textContent = question;
-            
+
+            // 맞춤형 토론 질문 생성 및 UI 업데이트 (현재 언어로)
+            const discussionQuestions = generateDiscussionQuestions(question, currentLang);
+            updateDiscussionParticipants(discussionQuestions);
+
             document.getElementById('think-screen').classList.add('hidden');
             document.getElementById('discussion-screen').classList.remove('hidden');
             window.scrollTo(0, 0);
@@ -9208,15 +9796,18 @@
             const analysisResult = generateAnalysisMetrics();
 
             // Grade Change Summary 업데이트
+            const gradeLabel = currentLang === 'ko' ? '등급' : 'Grade';
+            const pointsLabel = currentLang === 'ko' ? '점' : ' points';
+
             document.getElementById('results-summary-initial-icon').textContent = analysisResult.initialGradeIcon;
-            document.getElementById('results-summary-initial-grade').textContent = `Grade ${analysisResult.initialGrade}`;
+            document.getElementById('results-summary-initial-grade').textContent = `${gradeLabel} ${analysisResult.initialGrade}`;
             document.getElementById('results-summary-initial-score').textContent = analysisResult.initialScore.toFixed(1);
 
             const growthSign = analysisResult.growth.total >= 0 ? '+' : '';
-            document.getElementById('results-summary-growth-points').textContent = `${growthSign}${analysisResult.growth.total.toFixed(1)} points`;
+            document.getElementById('results-summary-growth-points').textContent = `${growthSign}${analysisResult.growth.total.toFixed(1)}${pointsLabel}`;
 
             document.getElementById('results-summary-final-icon').textContent = analysisResult.gradeIcon;
-            document.getElementById('results-summary-final-grade').textContent = `Grade ${analysisResult.grade}`;
+            document.getElementById('results-summary-final-grade').textContent = `${gradeLabel} ${analysisResult.grade}`;
             document.getElementById('results-summary-final-score').textContent = analysisResult.totalScore.toFixed(1);
 
             // 5개 카테고리별 변화
@@ -9282,12 +9873,19 @@
             // 레이더 차트 (Results 화면용)
             const radarCtx = document.getElementById('resultsThinkingLevelChart');
             if (radarCtx) {
+                const radarLabels = currentLang === 'ko'
+                    ? ['질문 깊이', '관점 다양성', '구조화 능력', '토론 능력', '실행 가능성']
+                    : ['Question Depth', 'Perspective Diversity', 'Structuring', 'Discussion', 'Application'];
+
+                const currentLevelLabel = currentLang === 'ko' ? '현재 레벨' : 'Current Level';
+                const avgLevelLabel = currentLang === 'ko' ? '평균 레벨' : 'Average Level';
+
                 new Chart(radarCtx, {
                     type: 'radar',
                     data: {
-                        labels: ['질문 깊이', '관점 다양성', '구조화 능력', '토론 능력', '실행 가능성'],
+                        labels: radarLabels,
                         datasets: [{
-                            label: '현재 레벨',
+                            label: currentLevelLabel,
                             data: [metrics.depth, metrics.perspective, metrics.structure, metrics.discussion, metrics.application],
                             backgroundColor: 'rgba(59, 130, 246, 0.2)',
                             borderColor: 'rgb(59, 130, 246)',
@@ -9297,7 +9895,7 @@
                             pointHoverBackgroundColor: '#fff',
                             pointHoverBorderColor: 'rgb(59, 130, 246)'
                         }, {
-                            label: '평균 레벨',
+                            label: avgLevelLabel,
                             data: [6.5, 6.5, 6.5, 6.5, 6.5],
                             backgroundColor: 'rgba(156, 163, 175, 0.1)',
                             borderColor: 'rgb(156, 163, 175)',
@@ -9344,12 +9942,19 @@
             // 성장 추이 차트 (Results 화면용)
             const trendCtx = document.getElementById('resultsGrowthTrendChart');
             if (trendCtx) {
+                const trendLabels = currentLang === 'ko'
+                    ? ['1회차', '2회차', '3회차', '4회차', '5회차 (현재)']
+                    : ['Session 1', 'Session 2', 'Session 3', 'Session 4', 'Session 5 (Current)'];
+
+                const depthLabel = currentLang === 'ko' ? '질문 깊이' : 'Question Depth';
+                const perspectiveLabel = currentLang === 'ko' ? '관점 다양성' : 'Perspective Diversity';
+
                 new Chart(trendCtx, {
                     type: 'line',
                     data: {
-                        labels: ['1회차', '2회차', '3회차', '4회차', '5회차 (현재)'],
+                        labels: trendLabels,
                         datasets: [{
-                            label: '질문 깊이',
+                            label: depthLabel,
                             data: [5.5, 6.0, 6.5, 7.0, metrics.depth],
                             borderColor: 'rgb(59, 130, 246)',
                             backgroundColor: 'rgba(59, 130, 246, 0.1)',
@@ -9358,7 +9963,7 @@
                             pointRadius: 4,
                             pointHoverRadius: 6
                         }, {
-                            label: '관점 다양성',
+                            label: perspectiveLabel,
                             data: [5.0, 5.5, 6.0, 6.5, metrics.perspective],
                             borderColor: 'rgb(34, 197, 94)',
                             backgroundColor: 'rgba(34, 197, 94, 0.1)',
@@ -9380,6 +9985,274 @@
                         }
                     }
                 });
+            }
+
+            // 새로운 고급 분석 섹션 업데이트
+            updateEnhancedAnalysis(analysisResult);
+        }
+
+        // 고급 분석 섹션 업데이트 함수
+        function updateEnhancedAnalysis(analysisResult) {
+            const lang = currentLang;
+            const average = 6.5; // 평균 점수
+
+            // 1. 강점/약점 분석
+            const strengthsList = document.getElementById('results-strengths-list');
+            const weaknessesList = document.getElementById('results-weaknesses-list');
+
+            if (strengthsList && weaknessesList) {
+                const strengths = [];
+                const weaknesses = [];
+
+                // 각 카테고리 분석
+                const categories = [
+                    { key: 'depth', name: lang === 'ko' ? '질문 깊이' : 'Question Depth' },
+                    { key: 'perspective', name: lang === 'ko' ? '관점 다양성' : 'Perspective Diversity' },
+                    { key: 'structure', name: lang === 'ko' ? '구조화 능력' : 'Structure' },
+                    { key: 'discussion', name: lang === 'ko' ? '토론 능력' : 'Discussion' },
+                    { key: 'application', name: lang === 'ko' ? '실행 가능성' : 'Application' }
+                ];
+
+                categories.forEach(cat => {
+                    const score = analysisResult.criteria[cat.key];
+                    const growth = analysisResult.growth[cat.key];
+                    const diff = score - average;
+
+                    if (score >= 7.5 || growth >= 1.5) {
+                        strengths.push({ name: cat.name, score, growth, diff });
+                    } else if (score < 5.0 || growth < 0.5) {
+                        weaknesses.push({ name: cat.name, score, growth, diff });
+                    }
+                });
+
+                // 강점 표시
+                strengthsList.innerHTML = strengths.length > 0
+                    ? strengths.map(s => `
+                        <div class="flex items-start text-green-700">
+                            <span class="mr-2 mt-0.5">✓</span>
+                            <span>${s.name}: ${s.diff > 0 ? (lang === 'ko' ? `평균 대비 +${s.diff.toFixed(1)} 높음` : `+${s.diff.toFixed(1)} above average`) : (lang === 'ko' ? `빠른 성장 (+${s.growth.toFixed(1)})` : `Fast growth (+${s.growth.toFixed(1)})`)}</span>
+                        </div>
+                    `).join('')
+                    : `<div class="flex items-start text-green-700"><span class="mr-2 mt-0.5">✓</span><span>${lang === 'ko' ? '전반적으로 고른 발전을 보이고 있습니다' : 'Showing balanced development overall'}</span></div>`;
+
+                // 약점 표시
+                weaknessesList.innerHTML = weaknesses.length > 0
+                    ? weaknesses.map(w => `
+                        <div class="flex items-start text-orange-700">
+                            <span class="mr-2 mt-0.5">•</span>
+                            <span>${w.name}: ${w.growth < 0.5 ? (lang === 'ko' ? `성장 ${w.growth === 0 ? '없음' : '부족'} (${w.growth >= 0 ? '+' : ''}${w.growth.toFixed(1)})` : `Low growth (${w.growth >= 0 ? '+' : ''}${w.growth.toFixed(1)})`) : (lang === 'ko' ? `평균 이하 (${w.score.toFixed(1)})` : `Below average (${w.score.toFixed(1)})`)}</span>
+                        </div>
+                    `).join('')
+                    : `<div class="flex items-start text-orange-700"><span class="mr-2 mt-0.5">•</span><span>${lang === 'ko' ? '모든 영역에서 양호한 수준입니다' : 'All areas are at good levels'}</span></div>`;
+            }
+
+            // 2. 개인화된 피드백 (사고 패턴 분석)
+            const thinkingPattern = document.getElementById('results-thinking-pattern');
+            if (thinkingPattern) {
+                const patterns = [];
+                const c = analysisResult.criteria;
+
+                if (c.depth > 7 && c.application < 6) {
+                    patterns.push(lang === 'ko' ? '추상적 사고는 뛰어나지만, 구체적 실행 계획이 부족합니다' : 'Strong abstract thinking, but lacks specific action plans');
+                }
+                if (c.perspective > c.depth) {
+                    patterns.push(lang === 'ko' ? '다양한 관점을 고려하는 능력이 향상되었습니다' : 'Improved ability to consider diverse perspectives');
+                }
+                if (analysisResult.growth.depth > 1) {
+                    patterns.push(lang === 'ko' ? '논리적 근거를 제시하는 능력이 개선되었습니다' : 'Improved ability to provide logical reasoning');
+                }
+                if (c.structure < 5) {
+                    patterns.push(lang === 'ko' ? '체계적인 사고 프레임워크 활용이 필요합니다' : 'Need to utilize systematic thinking frameworks');
+                }
+                if (c.discussion > 7) {
+                    patterns.push(lang === 'ko' ? '질문을 통한 토론 능력이 뛰어납니다' : 'Excellent discussion skills through questioning');
+                }
+
+                if (patterns.length === 0) {
+                    patterns.push(lang === 'ko' ? '전반적으로 균형잡힌 사고력을 보이고 있습니다' : 'Showing well-balanced thinking skills overall');
+                }
+
+                thinkingPattern.innerHTML = patterns.map(p => `
+                    <p class="flex items-start">
+                        <span class="text-purple-600 mr-2 mt-0.5">→</span>
+                        <span>${p}</span>
+                    </p>
+                `).join('');
+            }
+
+            // AI 종합 평가 (Overall Evaluation)
+            const aiFeedback = document.getElementById('results-ai-feedback');
+            const aiFeedbackItems = document.getElementById('results-ai-feedback-items');
+            if (aiFeedback && aiFeedbackItems) {
+                const c = analysisResult.criteria;
+                const g = analysisResult.growth;
+
+                // 주요 성장 포인트 찾기
+                const topGrowth = Object.entries(g)
+                    .filter(([key]) => key !== 'total' && key !== 'percentage')
+                    .sort((a, b) => b[1] - a[1])[0];
+
+                const growthNames = {
+                    'ko': { 'depth': '질문 깊이', 'perspective': '관점 다양성', 'structure': '구조화', 'discussion': '토론', 'application': '실행 가능성' },
+                    'en': { 'depth': 'question depth', 'perspective': 'perspective diversity', 'structure': 'structuring', 'discussion': 'discussion', 'application': 'application' }
+                };
+
+                // 피드백 메시지
+                const feedbackMsg = lang === 'ko'
+                    ? `<strong>성장 포인트:</strong> ${growthNames[lang][topGrowth[0]]}에서 ${topGrowth[1].toFixed(1)}점 성장했습니다. 다음 단계에서는 다양한 프레임워크를 활용해보세요.`
+                    : `<strong>Growth Point:</strong> Grew ${topGrowth[1].toFixed(1)} points in ${growthNames[lang][topGrowth[0]]}. Try using more diverse frameworks next time.`;
+
+                aiFeedback.innerHTML = feedbackMsg;
+
+                // 피드백 아이템
+                const items = [];
+
+                // 강점 항목 (2개)
+                const sortedByScore = Object.entries(c)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 2);
+
+                sortedByScore.forEach(([key, score]) => {
+                    if (score >= 7) {
+                        items.push({
+                            type: 'positive',
+                            text: lang === 'ko'
+                                ? `${growthNames[lang][key]} 우수`
+                                : `Excellent ${growthNames[lang][key]}`
+                        });
+                    }
+                });
+
+                // 개선 항목 (2개)
+                const sortedByScoreAsc = Object.entries(c)
+                    .sort((a, b) => a[1] - b[1])
+                    .slice(0, 2);
+
+                sortedByScoreAsc.forEach(([key, score]) => {
+                    if (score < 7) {
+                        items.push({
+                            type: 'improve',
+                            text: lang === 'ko'
+                                ? `${growthNames[lang][key]} 강화 필요`
+                                : `Need ${growthNames[lang][key]} improvement`
+                        });
+                    }
+                });
+
+                // HTML 생성
+                aiFeedbackItems.innerHTML = items.map(item => `
+                    <div class="flex items-center ${item.type === 'positive' ? 'text-green-700' : 'text-blue-700'}">
+                        <span class="mr-1">${item.type === 'positive' ? '✓' : '→'}</span>
+                        <span>${item.text}</span>
+                    </div>
+                `).join('');
+            }
+
+            // 3. 다음 단계 추천
+            const nextSteps = document.getElementById('results-next-steps');
+            if (nextSteps) {
+                const recommendations = [];
+
+                // 가장 낮은 2개 영역 찾기
+                const sorted = Object.entries(analysisResult.criteria)
+                    .sort((a, b) => a[1] - b[1])
+                    .slice(0, 2);
+
+                sorted.forEach((item, index) => {
+                    const key = item[0];
+                    const recommendations_map = {
+                        'ko': {
+                            'depth': { title: '질문 깊이 강화', desc: 'Why 질문을 3번 이상 연속해서 물어보며 본질을 탐구하세요', tags: ['5 Whys', 'Root Cause', 'Essence'] },
+                            'perspective': { title: '관점 다양성 확대', desc: '다양한 이해관계자의 입장에서 문제를 바라보세요', tags: ['Stakeholder Map', '6 Thinking Hats', 'Empathy'] },
+                            'structure': { title: '구조화 능력 강화', desc: 'MECE, 로직 트리 등의 프레임워크를 학습하세요', tags: ['MECE', 'Logic Tree', 'Mind Map'] },
+                            'discussion': { title: '토론 능력 향상', desc: '질문 기반 토론을 연습하고 다른 관점을 경청하세요', tags: ['Socratic Method', 'Active Listening', 'Devil\'s Advocate'] },
+                            'application': { title: '실행 계획 수립 연습', desc: '"어떻게" 질문에 집중하여 구체적인 실행 방안을 수립하세요', tags: ['Action Plan', '5W1H', 'SMART Goals'] }
+                        },
+                        'en': {
+                            'depth': { title: 'Enhance Question Depth', desc: 'Ask "Why" 3+ times consecutively to explore the essence', tags: ['5 Whys', 'Root Cause', 'Essence'] },
+                            'perspective': { title: 'Expand Perspective Diversity', desc: 'View problems from various stakeholders\' perspectives', tags: ['Stakeholder Map', '6 Thinking Hats', 'Empathy'] },
+                            'structure': { title: 'Strengthen Structuring', desc: 'Learn frameworks like MECE and Logic Trees', tags: ['MECE', 'Logic Tree', 'Mind Map'] },
+                            'discussion': { title: 'Improve Discussion Skills', desc: 'Practice question-based discussions and active listening', tags: ['Socratic Method', 'Active Listening', 'Devil\'s Advocate'] },
+                            'application': { title: 'Practice Action Planning', desc: 'Focus on "How" questions to develop concrete action plans', tags: ['Action Plan', '5W1H', 'SMART Goals'] }
+                        }
+                    };
+
+                    const rec = recommendations_map[lang][key];
+                    if (rec) {
+                        recommendations.push(`
+                            <div class="bg-white rounded-lg p-4">
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">${index + 1}️⃣</span>
+                                    <div class="flex-1">
+                                        <h5 class="font-bold text-blue-900 mb-1">${rec.title}</h5>
+                                        <p class="text-sm text-gray-600 mb-2">${rec.desc}</p>
+                                        <div class="flex gap-2 flex-wrap">
+                                            ${rec.tags.map(tag => `<span class="px-2 py-1 ${index === 0 ? 'bg-blue-100 text-blue-700' : 'bg-cyan-100 text-cyan-700'} rounded text-xs">${tag}</span>`).join('')}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `);
+                    }
+                });
+
+                if (recommendations.length > 0) {
+                    nextSteps.innerHTML = recommendations.join('');
+                }
+            }
+
+            // 4. 학습 여정 타임라인 업데이트
+            const journeyTotal = document.getElementById('results-journey-total');
+            if (journeyTotal) {
+                journeyTotal.textContent = `${analysisResult.growth.total >= 0 ? '+' : ''}${analysisResult.growth.total.toFixed(1)}${lang === 'ko' ? '점' : ' pts'}`;
+            }
+
+            // 5. 비교 분석 업데이트
+            const comparisonYourScore = document.getElementById('results-comparison-your-score');
+            const comparisonAverageScore = document.getElementById('results-comparison-average-score');
+            const comparisonPercentile = document.getElementById('results-comparison-percentile');
+            const comparisonInsight = document.getElementById('results-comparison-insight');
+
+            if (comparisonYourScore) comparisonYourScore.textContent = analysisResult.totalScore.toFixed(1);
+            if (comparisonAverageScore) comparisonAverageScore.textContent = average.toFixed(1);
+
+            if (comparisonPercentile) {
+                const diff = analysisResult.totalScore - average;
+                let percentile = '';
+                if (diff >= 2.5) percentile = lang === 'ko' ? '상위 10%' : 'Top 10%';
+                else if (diff >= 1.5) percentile = lang === 'ko' ? '상위 25%' : 'Top 25%';
+                else if (diff >= 0.5) percentile = lang === 'ko' ? '상위 40%' : 'Top 40%';
+                else if (diff >= -0.5) percentile = lang === 'ko' ? '평균' : 'Average';
+                else percentile = lang === 'ko' ? '하위 40%' : 'Bottom 40%';
+
+                comparisonPercentile.textContent = percentile;
+            }
+
+            if (comparisonInsight) {
+                const diff = analysisResult.totalScore - average;
+                const topCriteria = Object.entries(analysisResult.criteria)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 2)
+                    .map(c => {
+                        const names = {
+                            'ko': { 'depth': '질문 깊이', 'perspective': '관점 다양성', 'structure': '구조화 능력', 'discussion': '토론 능력', 'application': '실행 가능성' },
+                            'en': { 'depth': 'question depth', 'perspective': 'perspective diversity', 'structure': 'structuring', 'discussion': 'discussion', 'application': 'application' }
+                        };
+                        return names[lang][c[0]];
+                    });
+
+                let insight = '';
+                if (diff > 0) {
+                    insight = lang === 'ko'
+                        ? `평균보다 ${diff.toFixed(1)}점 높으며, 특히 ${topCriteria.join('과 ')}에서 뛰어난 성과를 보였습니다.`
+                        : `${diff.toFixed(1)} points above average, particularly excelling in ${topCriteria.join(' and ')}.`;
+                } else {
+                    insight = lang === 'ko'
+                        ? `${topCriteria.join('과 ')}에서 강점을 보이고 있습니다. 꾸준한 연습으로 더 성장할 수 있습니다.`
+                        : `Showing strengths in ${topCriteria.join(' and ')}. Can grow further with consistent practice.`;
+                }
+
+                comparisonInsight.textContent = insight;
             }
         }
 
